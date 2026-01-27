@@ -1,0 +1,134 @@
+/* ===== Global Styles ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1C565E; /* deep teal */
+  color: #fefdf9; /* off-white text */
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #f4a8b0; /* light pink */
+  padding: 1.5rem 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  color: #ffffff;
+  animation: fadeIn 2s ease-in-out; /* animated element */
+}
+
+header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+/* ===== Sections ===== */
+section {
+  background-color: #e3f9e5; /* light green */
+  margin: 2rem auto;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  color: #1C565E; /* text inside sections */
+}
+
+/* ===== Text Styling ===== */
+h2 {
+  color: #f4a8b0; /* light pink */
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+ul {
+  list-style-type: circle;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin: 0.5rem 0;
+  font-style: italic;
+}
+
+/* ===== Images ===== */
+.intro-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 20px;
+  margin: 1rem auto;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.intro-image {
+  position: absolute;
+  top: -20px; /* crop the top */
+  left: 0;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Interactive hover effect on image */
+.intro-image:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+
+/* ===== Music Grid using Flexbox ===== */
+.music-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.artist-card {
+  background-color: #f4a8b0; /* light pink cards */
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  flex: 1 1 120px; /* responsive width */
+  text-align: center;
+  transition: transform 0.3s, background-color 0.3s; /* animation */
+  cursor: pointer;
+}
+
+/* Hover state for interactivity */
+.artist-card:hover {
+  transform: translateY(-5px);
+  background-color: #f7c1cb;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 500px) {
+  section {
+    width: 95%;
+    padding: 1rem;
+  }
+  .music-grid {
+    flex-direction: column;
+  }
+}

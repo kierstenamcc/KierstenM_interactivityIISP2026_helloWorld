@@ -23,9 +23,7 @@ h1,h2,h3,h4,h5 {
             sans-serif; /* another fall back */
 }
 
-
-
-
+    
 p{
   color:rgb(175, 79, 27); /* This change the font color of all the paragraph elements to blue */
 }

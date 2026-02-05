@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html>
+<body>
 
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+<section id="JSDemo"
+<button 
+   onclick="this.style.color='blue'"
+   id="colorChangeButton">
+   this is a button</button>
+
+<style>
+    #colorChangeButton{
+        background-color:lightblue;
+    }
+</style>
+
+
+
+
+<button 
+   onclick="alert('ALERT!')"
+   id="colorChangeButton">
+    alert button
+</button>
+
+<button 
+   onclick="confirm('Press a button!\nEither OK or Cancel.');"
+   id="colorChangeButton">
+    Click to Confirm
+
+<button onclick=
+    "if(this.style.color=='red')//this is two equal sign = =
+     {this.style.color='black'}
+     else
+     {this.style.color='red'}">
+    I can turn red</button>
+
+    <script>
+    function handleConfirm() {
+        let text;
+        if (confirm("Press a button!") == true) {
+            text = "You pressed OK!";
+        } else {
+            text = "You canceled!";
+        }
+        console.log(text);
+    }
+    </script>
+</button>
+
+
+<style>
+    .style.color{
+        color:pink;
+    }
+</style>
+
+<br><br>
+<br><br>
+<b><p>Click the button to ask for your favorite drink.</p></b>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let text;
+  let favDrink = prompt("What's your favorite drink?", "Coca-Cola");
+  switch(favDrink) {
+    case "Coca-Cola":
+      text = "Excellent choice. Coca-Cola is good for your soul.";
+      break;
+    case "Pepsi":
+      text = "Pepsi is my favorite too!";
+      break;
+    case "Sprite":
+      text = "Really? Are you sure the Sprite is your favorite?";
+      break;
+      case "Water":
+      text = "Water is a good choice! Very healthy.";
+      break;
+      case "Eggnog":
+      text = "Yum! Very festive!";
+      break;
+    default:
+      text = "I have never heard of that one..";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+<br><br>
+<br><br>
+<br><br>
+<button onmouseover="alert('OH! Sorry you moved your mouse really quick and it scared me')">Well Adjusted Button</button>
+
+<br><br>
+<br><br>
+<br><br>
+   <b>If you could pick any super power from this list, which one would you pick?</b>
+<select id="todo" onchange="document.getElementById('iWould').innerHTML=`${document.getElementById('todo').value}`">
+  <option value="testing textttt">super strength
+  <option value="test test test">flying
+  <option value="testingggg">invisibility
+</select>
+
+</body>
+</html>
